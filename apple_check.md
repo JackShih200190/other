@@ -25,3 +25,7 @@
   - 移除所有外接程式
   - 電腦關機
   - 開時時按住D鍵  
+
+
+## 影片
+- [檢查流程](https://www.youtube.com/watch?v=U8IbRS5nacg)
