@@ -3,8 +3,8 @@ OWASP 2017 vs OWASP 2021
 ![image](https://user-images.githubusercontent.com/55253641/177089994-f1425eb4-ad70-4127-a8ef-82a24cb0c586.png)
 
 
-## OWASP_TOP10_2021
-### 1.Broken Access Control (權限控制失效)
+# OWASP_TOP10_2021
+## 1.Broken Access Control (權限控制失效)
 ```
 存取控制強化政策，使用戶不能採取在預期權限之外的行動。控制失效通常會導致未經授權的資訊洩露、修改或損壞所有資料，或執行超出用戶權限的業務功能
 ```
@@ -39,7 +39,7 @@ https://example.com/app/admin_getappInfo
 
 如果未經身份驗證的用戶可以存取任一頁面，那就是一個缺陷。 如果一個非管理員可以存取管理頁面，這也是一個缺陷。
 ```
-### 2.Cryptographic Failures(加密機制失效)
+## 2.Cryptographic Failures(加密機制失效)
 ```
 敏感資料外洩，注重於加密金鑰失效或是資料未加密
 ```
@@ -65,11 +65,11 @@ https://example.com/app/admin_getappInfo
 
 情境 #3: 密碼資料庫使用未被加鹽或簡單的雜湊來儲存每個人的密碼，一個檔案上傳的缺陷可以讓攻擊者存取密碼資料庫，所有未被加鹽的雜湊可以被預先計算好的彩虹表公開。即使雜湊有被加鹽，由簡單或快速的雜湊法算出的雜湊仍能被GPU破解。
 ```
-### 3.Injection(注入式攻擊)
-### 4.Insecure Design(不安全設計)
-### 5.Security Misconfiguration(安全設定缺陷)
-### 6.Vulnerable and Outdated Components(危險或過舊的元件)
-### 7.Identification and Authentication Failures(認證及驗證機制失效)
-### 8.Software and Data Integrity Failures(軟體及資料完整性失效)
-### 9.Security Logging and Monitoring Failures(資安記錄及監控失效)
-### 10.Server-Side Request Forgery(伺服端請求偽造)
+## 3.Injection(注入式攻擊)
+## 4.Insecure Design(不安全設計)
+## 5.Security Misconfiguration(安全設定缺陷)
+## 6.Vulnerable and Outdated Components(危險或過舊的元件)
+## 7.Identification and Authentication Failures(認證及驗證機制失效)
+## 8.Software and Data Integrity Failures(軟體及資料完整性失效)
+## 9.Security Logging and Monitoring Failures(資安記錄及監控失效)
+## 10.Server-Side Request Forgery(伺服端請求偽造)
