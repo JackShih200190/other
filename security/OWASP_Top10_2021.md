@@ -19,6 +19,26 @@ OWASP 2017 vs OWASP 2021
 - 對API和控制器存取進行流量限制，以最小化自動攻擊工具所帶來的損害。
 - JWT令牌於登出後，在伺服器端應使其失效。
 
+### 攻擊環境範例
+```
+情境 #1： 應用程式在存取帳戶資訊的SQL呼叫中使用未經驗證的資料：
+
+pstmt.setString(1, request.getParameter("acct"));
+
+ResultSet results = pstmt.executeQuery( );
+
+攻擊者只需修改瀏覽器的“acct”參數即可發送他們想要的任何帳號。如果沒有正確驗證，攻擊者可以存取任何用戶的帳戶。
+
+https://example.com/app/accountInfo?acct=notmyacct
+
+情境#2： 攻擊者僅強迫瀏覽某些目標網址。存取管理頁面需要管理員權限。
+
+https://example.com/app/getappInfo
+
+https://example.com/app/admin_getappInfo
+
+如果未經身份驗證的用戶可以存取任一頁面，那就是一個缺陷。 如果一個非管理員可以存取管理頁面，這也是一個缺陷。
+```
 ### 2.Cryptographic Failures(加密機制失效)
 
 
