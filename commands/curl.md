@@ -20,3 +20,8 @@ This is not the full help, this menu is stripped into categories.
 Use "--help category" to get an overview of all categories.
 For all options use the manual or "--help all".
 ```
+# curl 略過檢查自簽 SSL 憑證有效性
+```
+curl 指令後面加上 “-k” 或 “–insecure” 參數, 這樣 curl 便不會檢查 SSL 的有效性
+curl -k | curl =insecure
+```
